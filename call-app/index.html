@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note Card Stack</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>New Call</h2>
+        <form>
+            <label>Image URL</label>
+            <input required type="text" placeholder="https://example.com/photo.jpg" />
+
+            <label>Full Name</label>
+            <input required type="text" placeholder="Enter full name" />
+
+            <label>Home Town</label>
+            <input required type="text" placeholder="Enter home town" />
+
+            <label>Purpose</label>
+            <input required type="text" placeholder="e.g., Quick appointment note" />
+
+            <label>Category</label>
+            <label class="tag-checkbox">
+                <input required type="radio" name="category" value="emergency" />
+                <span>Emergency</span>
+            </label>
+
+            <label class="tag-checkbox">
+                <input required type="radio" name="category" value="important" />
+                <span>Important</span>
+            </label>
+
+            <label class="tag-checkbox">
+                <input required type="radio" name="category" value="urgent" />
+                <span>Urgent</span>
+            </label>
+
+            <label class="tag-checkbox">
+                <input required type="radio" name="category" value="no-rush" />
+                <span>No Rush</span>
+            </label>
+
+            <button class="submit-btn">Create Note</button>
+        </form>
+        <button class="closeForm">close</button>
+    </div>
+    <div class="note-container">
+        <div class="left-icons">
+            <button id="add-note"><i class="ri-add-line"></i></button>
+            <button id="upBtn"><i class="ri-arrow-up-line"></i></button>
+            <button id="downBtn"><i class="ri-arrow-down-line"></i></button>
+        </div>
+
+        <div class="stack">
+
+        </div>
+
+        <div class="right-colors">
+            <span class="dot black"></span>
+            <span class="dot purple"></span>
+            <span class="dot orange"></span>
+            <span class="dot teal"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
