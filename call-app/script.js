@@ -178,7 +178,7 @@ function showCards() {
 showCards();
 
 function updateStack() {
-  const cards = document.querySelectorAll(".stack .card");
+  const card = document.querySelectorAll(".stack .card");
 
   for (let i = 0; i < 3; i++) {
     card.style.zIndex = 3 - i;
