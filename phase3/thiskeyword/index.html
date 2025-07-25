@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>User Cards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 min-h-screen">
+    <form autocomplete="off"
+        class="bg-white/90 backdrop-blur rounded-2xl shadow-xl p-8 mb-12 w-full max-w-lg mx-auto mt-10 border border-blue-100">
+        <h2 class="text-3xl font-bold mb-6 text-center text-blue-700 tracking-tight">Add User</h2>
+        <div class="mb-5">
+            <label class="block text-gray-700 font-medium mb-2" for="name">Name</label>
+            <input
+                class="w-full px-4 py-2 border border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+                type="text" id="name" name="name" required>
+        </div>
+        <div class="mb-5">
+            <label class="block text-gray-700 font-medium mb-2" for="role">Role</label>
+            <input
+                class="w-full px-4 py-2 border border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+                type="text" id="role" name="role" required>
+        </div>
+        <div class="mb-5">
+            <label class="block text-gray-700 font-medium mb-2" for="bio">Bio</label>
+            <textarea
+                class="w-full px-4 py-2 border border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+                id="bio" name="bio" rows="3" required></textarea>
+        </div>
+        <div class="mb-7">
+            <label class="block text-gray-700 font-medium mb-2" for="photo">Photo URL</label>
+            <input
+                class="w-full px-4 py-2 border border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+                type="url" id="photo" name="photo" required>
+        </div>
+        <button
+            class="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white py-3 rounded-lg font-semibold hover:from-blue-600 hover:to-purple-600 transition shadow-lg"
+            type="submit">Submit</button>
+    </form>
+    <div class="users grid grid-cols-1 md:grid-cols-3 gap-10 px-6 max-w-6xl mx-auto">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

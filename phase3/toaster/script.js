@@ -26,3 +26,7 @@ toaster("Download Done");
 setTimeout(() => {
   toaster("Harsh accepted your request");
 }, 2000);
+
+setTimeout(() => {
+  toaster("Rupesh send you a message");
+}, 1500);
